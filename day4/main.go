@@ -78,7 +78,8 @@ func stringToInt(s string) int {
 func part1() {
 	lines, err := readLines("input.txt")
 	if err != nil {
-		panic(err) }
+		panic(err)
+	}
 	totalPoints := 0
 	for _, line := range lines {
 		_, cards, _ := strings.Cut(line, ":")
